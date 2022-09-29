@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  background-color: #fff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(176, 176, 176, .5)
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 80px
+  }
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+@media screen and (max-width: 1024px) {
+  .header__actions {
+    margin: 0 0 0 35px
+  }
+}
+
+.header__phone {
+  text-decoration: none;
+  margin: 0 35px 0 0;
+  color: #303030
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+@media screen and (max-width: 1024px) {
+  .header__phone {
+    display: none
+  }
+}
