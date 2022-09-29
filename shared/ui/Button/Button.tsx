@@ -1,14 +1,19 @@
-import {ButtonHTMLAttributes, FC} from "react";
+import {ButtonHTMLAttributes, FC, useCallback, MouseEvent, HTMLAttributeAnchorTarget} from "react";
 import classNames from "classnames";
 import styles from "./Button.module.scss";
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   skin?: 'primary' | 'ghost'
+  href?: string
+  target?: HTMLAttributeAnchorTarget
 }
 
 export const Button: FC<IButtonProps> = ({
   className,
   skin = 'primary',
+  onClick,
+  href,
+                                           target = "_self",
   children,
   ...otherProps
 }) => {
@@ -18,9 +23,18 @@ export const Button: FC<IButtonProps> = ({
     className
   )
 
+  const onClickButton = useCallback((event: MouseEvent<HTMLButtonElement>) => {
+    if(href !== undefined) {
+      window.open(href, target)
+    }
+
+    onClick && onClick(event)
+  }, [href])
+
   return (
     <button
       className={classes}
+      onClick={onClickButton}
       {...otherProps as IButtonProps}
     >
       {children}

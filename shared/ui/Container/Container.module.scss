@@ -1,0 +1,16 @@
+@import "app/styles/variables";
+
+.container {
+  max-width: $desktop-width;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $laptop-width){
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: $tablet-width-m){
+    padding: 0 10px;
+  }
+}

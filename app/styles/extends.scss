@@ -1,0 +1,118 @@
+@import "variables";
+
+%h1 {
+  font-family: $secondary-font-stack;
+  font-size: $h1-font-size;
+  line-height: 110%;
+  color: $dark-gray-color;
+  font-weight: normal;
+  margin: 0;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $h1-font-size-t;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $h1-font-size-m;
+  }
+}
+
+%h2 {
+  font-family: $secondary-font-stack;
+  font-size: $h2-font-size;
+  line-height: 110%;
+  color: $dark-gray-color;
+  font-weight: normal;
+  margin: 0;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $h2-font-size-t;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $h2-font-size-m;
+  }
+}
+
+%h3 {
+  font-family: $secondary-font-stack;
+  font-size: $h3-font-size;
+  line-height: 110%;
+  color: $dark-gray-color;
+  font-weight: normal;
+  margin: 0 0 25px;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $h3-font-size-t;
+    margin: 0 0 20px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $h3-font-size-m;
+  }
+}
+
+%h4 {
+  font-family: $secondary-font-stack;
+  font-size: $h4-font-size;
+  line-height: 110%;
+  color: $dark-gray-color;
+  font-weight: normal;
+  margin: 0;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $h4-font-size-t;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $h4-font-size-m;
+  }
+}
+
+%text {
+  font-family: $main-font-stack;
+  font-size: $text-font-size;
+  color: $dark-gray-color;
+  margin: 0;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $text-font-size-t;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $text-font-size-m;
+  }
+}
+
+%link {
+  font-family: $main-font-stack;
+  font-size: $link-font-size;
+  color: $dark-gray-color;
+  margin: 0;
+}
+
+%button-text {
+  font-family: $main-font-stack;
+  font-size: $link-font-size;
+  font-weight: 600;
+  color: $dark-gray-color;
+  margin: 0;
+}
+
+%number {
+  font-family: $main-font-stack;
+  font-size: $number-font-size;
+  font-weight: 600;
+  color: $gray-color;
+  opacity: 0.15;
+  margin: 0;
+
+  @media screen and (max-width: $laptop-width) {
+    font-size: $number-font-size-t;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    font-size: $number-font-size-m;
+  }
+}
+

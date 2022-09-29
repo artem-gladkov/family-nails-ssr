@@ -1,47 +1,43 @@
+@import "app/styles/variables";
+
 .header {
   position: fixed;
   width: 100%;
   z-index: 2;
   top: 0;
-  background-color: #fff;
-  height: 120px;
+  background-color: $white;
+  height: $header-height;
   display: flex;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(176, 176, 176, .5)
-}
+  box-shadow: $primary-shadow-1;
 
-@media screen and (max-width: 1024px) {
-  .header {
-    height: 80px
+  @media screen and (max-width: $laptop-width) {
+    height: $header-height-t;
   }
 }
 
-.header__actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between
-}
-
-@media screen and (max-width: 1024px) {
-  .header__actions {
-    margin: 0 0 0 35px
-  }
-}
-
-.header__phone {
-  text-decoration: none;
-  margin: 0 35px 0 0;
-  color: #303030
-}
-
-.header__content {
+.content {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .header__phone {
-    display: none
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: $laptop-width) {
+    margin: 0 0 0 35px;
+  }
+}
+
+.phone {
+  text-decoration: none;
+  margin: 0 35px 0 0;
+  color: $dark-gray-color;
+
+  @media screen and (max-width: $laptop-width) {
+    display: none;
   }
 }

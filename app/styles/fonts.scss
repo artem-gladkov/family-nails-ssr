@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Orchidea Pro';
+  src: url('../fonts/OrchideaPro-Regular/OrchideaPro-Regular.woff2') format('woff2'),
+  url('../fonts/OrchideaPro-Regular/OrchideaPro-Regular.woff') format('woff'),
+  url('../fonts/OrchideaPro-Regular/OrchideaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orchidea Pro Md';
+  src: url('../fonts/OrchideaPro-Medium/OrchideaPro-Medium.woff2') format('woff2'),
+  url('../fonts/OrchideaPro-Medium/OrchideaPro-Medium.woff') format('woff'),
+  url('../fonts/OrchideaPro-Medium/OrchideaPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orchidea Pro Lt';
+  src: url('../fonts/OrchideaPro-Light/OrchideaPro-Light.woff2') format('woff2'),
+  url('../fonts/OrchideaPro-Light/OrchideaPro-Light.woff') format('woff'),
+  url('../fonts/OrchideaPro-Light/OrchideaPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular/Raleway-Regular.woff2') format('woff2'),
+  url('../fonts/Raleway-Regular/Raleway-Regular.woff') format('woff'),
+  url('../fonts/Raleway-Regular/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

@@ -8,7 +8,6 @@ export interface ILogoProps extends HTMLProps<HTMLDivElement>{
 }
 
 export const Logo: FC<ILogoProps> = ({className, ...otherProps}) => {
-
   return (
     <div className={classNames(styles.logo, className)} {...otherProps}>
       <Image src={logoPath} alt='Family Nails'/>

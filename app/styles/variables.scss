@@ -1,0 +1,71 @@
+// Colors
+$primary-color-1        : #E1C06F;
+$primary-color-2        : #9FAB7C;
+$primary-color-3        : #E3D0A1;
+$primary-color-4        : #EDE7CA;
+$primary-color-5        : #AC8E5A;
+
+$dark-gray-color        : #303030;
+$gray-color             : #909090;
+$light-gray-color       : #F3F3F3;
+
+$white                  : #fff;
+$black                  : #000;
+
+$vk-color                  : #0077FF;
+$inst-color                : #E1306C;
+$whatsapp-color            : #25D366;
+
+$primary-gradient-1     : radial-gradient(100% 900% at 0% 100%, #AC8E5A 21.35%, #E1C06F 100%);
+
+// Grid
+$desktop-width          : 1260px;
+$laptop-width           : 1024px;
+$tablet-width           : 768px;
+$tablet-width-m         : 640px;
+$mobile-width           : 480px;
+$mobile-width-m         : 320px;
+
+// Fonts
+$main-font-stack        : 'Raleway', sans-serif;
+$secondary-font-stack   : 'Orchidea Pro', serif;
+
+$h1-font-size                : 84px;
+$h1-font-size-t              : 56px;
+$h1-font-size-m              : 36px;
+
+$h2-font-size                : 56px;
+$h2-font-size-t              : 36px;
+$h2-font-size-m              : 24px;
+
+$h3-font-size                : 36px;
+$h3-font-size-t              : 24px;
+$h3-font-size-m              : 18px;
+
+$h4-font-size                : 24px;
+$h4-font-size-t              : 18px;
+$h4-font-size-m              : 16px;
+
+$text-font-size              : 18px;
+$text-font-size-t            : 14px;
+$text-font-size-m            : 14px;
+
+$link-font-size              : 14px;
+$button-text-font-size       : 14px;
+
+$number-font-size            : 200px;
+$number-font-size-t          : 120px;
+$number-font-size-m          : 120px;
+
+//Shadows
+$primary-shadow-1: 0px 10px 20px rgba(176, 176, 176, 0.5);
+$primary-shadow-2: 0px -10px 20px rgba(176, 176, 176, 0.5);
+$primary-shadow-3: inset 0px -10px 20px rgba(176, 176, 176, 0.5);
+$primary-shadow-4: 0px 10px 20px rgba(176, 176, 176, 0.5), 0px -10px 20px rgba(176, 176, 176, 0.5);
+
+// Options
+$header-height: 120px;
+$header-height-t: 80px;
+
+$footer-height: 120px;
+$footer-height-t: 80px;

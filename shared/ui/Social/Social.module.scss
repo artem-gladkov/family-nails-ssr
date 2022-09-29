@@ -1,0 +1,35 @@
+@import "app/styles/variables";
+
+.social {
+  display: grid;
+  grid-gap: 0 20px;
+  grid-template-columns: repeat(3, 24px);
+  grid-template-rows: 24px;
+}
+
+.item {
+  cursor: pointer;
+
+  svg {
+    fill: $primary-color-5;
+    transition: fill ease 0.4s;
+
+    &:hover {
+      svg {
+        transition: fill ease 0.4s;
+      }
+    }
+  }
+}
+
+.IconVk:hover svg {
+  fill: $vk-color;
+}
+
+.IconInst:hover svg {
+  fill: $inst-color;
+}
+
+.IconWhatsapp:hover svg {
+  fill: $whatsapp-color;
+}

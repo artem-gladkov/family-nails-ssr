@@ -1,0 +1,38 @@
+@import "app/styles/extends";
+@import "app/styles/variables";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 180px;
+  height: 60px;
+  padding: 2px;
+  @extend %button-text;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: unset;
+  text-align: center;
+  transition: all .4s ease-in-out;
+  background-position: 0 0;
+
+  @media screen and (max-width: $tablet-width-m) {
+    height: 40px;
+  }
+
+  &.primary {
+    border: none;
+    color: $white;
+    background-image: $primary-gradient-1;
+
+    &:hover {
+      transition: all .4s ease-in-out;
+    }
+  }
+
+  &.ghost {
+    border: 2px solid $primary-color-5;
+    color: $primary-color-5;
+  }
+}

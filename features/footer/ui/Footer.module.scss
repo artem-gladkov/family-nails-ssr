@@ -1,0 +1,25 @@
+@import "app/styles/variables";
+
+.footer {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  background: $white;
+  height: $footer-height;
+
+  @media screen and (max-width: $laptop-width) {
+    height: $footer-height-t;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year {
+  @media screen and (max-width: $tablet-width-m){
+    display: none;
+  }
+}
