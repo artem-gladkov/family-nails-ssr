@@ -1,0 +1,59 @@
+@import "app/styles/variables";
+@import "app/styles/extends";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.separator {
+  @extend %h2;
+  position: relative;
+  padding: 16px 0 0;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: $primary-color-1;
+    position: absolute;
+    left: -80px;
+    top: 29%;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+  width: 100%;
+}
+
+
+.list {
+  padding: 16px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+  max-width: 570px;
+}
+
+.number {
+  @extend %h2;
+}
+
+.description {
+  color: $gray-color;
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .separator::before {
+    display: none;
+  }
+
+  .list {
+    grid-gap: 30px;
+  }
+}

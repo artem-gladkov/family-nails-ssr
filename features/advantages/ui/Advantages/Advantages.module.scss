@@ -1,0 +1,24 @@
+@import "app/styles/variables";
+
+.advantages {
+  padding: 120px 0 0;
+  overflow: hidden;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px 0;
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .advantages {
+    padding: 60px 0;
+    background-color: $primary-color-2;
+  }
+
+  .list {
+    padding: 0 20px;
+    grid-gap: 0;
+  }
+}

@@ -1,8 +1,5 @@
 import {FC, SVGProps} from "react";
-import Image from 'next/image'
 import {IconsArray} from './icons'
-import classNames from "classnames";
-import styles from './Icon.module.scss'
 
 //TODO any
 export interface IIconProps extends SVGProps<any>{

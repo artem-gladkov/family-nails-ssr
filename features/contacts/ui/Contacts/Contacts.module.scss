@@ -1,0 +1,64 @@
+@import "app/styles/variables";
+
+.contacts {
+  position: relative;
+  max-height: 674px;
+  height: 100%;
+  padding: 120px 0 0;
+}
+
+.title {
+  margin-top: unset;
+}
+
+.info {
+  max-width: 570px;
+  width: 100%;
+  justify-self: end;
+}
+
+.list {
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-gap: 60px 0;
+}
+
+.map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 49%;
+  height: 100%;
+}
+
+@media screen and (max-width: $laptop-width) {
+  .contacts {
+    max-height: unset;
+    height: unset;
+  }
+
+  .info {
+    margin: 0 0 60px;
+  }
+
+  .map {
+    position: unset;
+    width: unset;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .contacts {
+    padding: 60px 0 0;
+  }
+
+  .items {
+    grid-auto-rows: max-content;
+    grid-gap: 30px 0;
+  }
+
+  .info {
+    margin: 0 0 30px;
+  }
+}

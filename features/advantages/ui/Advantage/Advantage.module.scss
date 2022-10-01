@@ -1,0 +1,75 @@
+@import "app/styles/variables";
+
+.advantage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 60px;
+  align-items: center;
+
+  &:nth-child(even) {
+    .bg {
+      fill: $primary-color-2;
+    }
+
+    .arrow {
+      fill: $primary-color-2;
+    }
+
+    .title,
+    .text {
+      color: $white;
+    }
+  }
+
+  &:last-child {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+.description {
+  z-index: 1;
+}
+
+.photo {
+  justify-self: end;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+}
+
+.bg {
+  position: absolute;
+  width: 60vw;
+  height: 100%;
+  left: 40%;
+  fill: white;
+  z-index: -1;
+}
+
+.arrow {
+  position: absolute;
+  height: 71.5%;
+  right: 20%;
+  top: 70%;
+  fill: white;
+  z-index: 0;
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .advantage {
+    grid-template-columns: 0 1fr;
+    grid-gap: 0;
+
+    & ~ & {
+      margin: 30px 0 0;
+    }
+
+    .bg,
+    .arrow {
+      display: none;
+    }
+  }
+}

@@ -13,7 +13,7 @@ export const Button: FC<IButtonProps> = ({
   skin = 'primary',
   onClick,
   href,
-                                           target = "_self",
+  target = "_self",
   children,
   ...otherProps
 }) => {

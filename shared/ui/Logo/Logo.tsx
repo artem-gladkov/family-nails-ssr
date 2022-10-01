@@ -7,10 +7,10 @@ import Image from 'next/image'
 export interface ILogoProps extends HTMLProps<HTMLDivElement>{
 }
 
-export const Logo: FC<ILogoProps> = ({className, ...otherProps}) => {
+export const Logo: FC<ILogoProps> = ({className, width, height, ...otherProps}) => {
   return (
     <div className={classNames(styles.logo, className)} {...otherProps}>
-      <Image src={logoPath} alt='Family Nails'/>
+      <Image src={logoPath} alt='Family Nails' width={width} height={height}/>
     </div>
   )
 }

@@ -1,0 +1,16 @@
+@import "app/styles/variables";
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed $black;
+  align-items: end;
+}
+
+.name {
+  padding: 0 30px 0 0;
+}
+
+.price {
+  white-space: nowrap;
+}

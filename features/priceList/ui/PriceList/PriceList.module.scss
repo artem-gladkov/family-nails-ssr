@@ -1,0 +1,10 @@
+@import "app/styles/variables";
+
+.priceList{
+  overflow: hidden;
+}
+
+.list {
+  display: grid;
+  grid-gap: 30px 0;
+}

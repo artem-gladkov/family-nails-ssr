@@ -1,0 +1,7 @@
+@import "app/styles/variables";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
