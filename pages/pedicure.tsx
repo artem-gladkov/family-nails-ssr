@@ -1,8 +1,8 @@
 import type {NextPage} from 'next'
-import {Preview} from "@features/preview";
-import {Service} from "@features/service";
+import {Preview} from "../widgets/preview";
+import {Service} from "../widgets/service";
 import {PageLayout} from "@shared/ui";
-import {Portfolio} from "@features/portfolio";
+import {Portfolio} from "../widgets/portfolio";
 
 const Pedicure: NextPage = () => {
   return (

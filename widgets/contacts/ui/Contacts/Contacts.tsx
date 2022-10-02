@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import {YMaps, Map, Placemark} from '@pbe/react-yandex-maps'
 
 import {Container, Title} from '@shared/ui'
-import {Contact, CONTACTS_LIST} from '@features/contacts'
+import {Contact, CONTACTS_LIST} from '../../../contacts'
 
 import styles from './Contacts.module.scss'
 

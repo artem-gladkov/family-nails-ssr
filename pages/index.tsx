@@ -1,15 +1,15 @@
 import type {NextPage} from 'next'
-import {Preview} from "@features/preview";
-import {Service} from "@features/service";
-import {Advantages} from "@features/advantages";
+import {Preview} from "../widgets/preview";
+import {Service} from "../widgets/service";
+import {Advantages} from "../widgets/advantages";
 
-import {Benefits} from '@features/benefits';
-import {PriceList} from "@features/priceList";
-import {Portfolio} from "@features/portfolio";
-import {Offer} from '@features/offer';
-import {AboutUs} from "@features/aboutUs";
-import {Team} from "@features/team";
-import {Contacts} from '@features/contacts';
+import {Benefits} from '../widgets/benefits';
+import {PriceList} from "../widgets/priceList";
+import {Portfolio} from "../widgets/portfolio";
+import {Offer} from '../widgets/offer';
+import {AboutUs} from "../widgets/aboutUs";
+import {Team} from "../widgets/team";
+import {Contacts} from '../widgets/contacts';
 import {PageLayout} from "@shared/ui";
 
 const Home: NextPage = () => {

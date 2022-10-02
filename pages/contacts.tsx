@@ -1,5 +1,5 @@
 import type {NextPage} from 'next'
-import {Contacts} from "@features/contacts";
+import {Contacts} from "../widgets/contacts";
 import {PageLayout} from "@shared/ui";
 
 const ContactsPage: NextPage = () => {

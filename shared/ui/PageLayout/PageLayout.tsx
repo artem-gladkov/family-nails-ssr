@@ -3,8 +3,8 @@ import classNames from 'classnames'
 
 import styles from './PageLayout.module.scss'
 import Head from "next/head";
-import {Header} from "@features/header";
-import {Footer} from "@features/footer";
+import {Header} from "../../../widgets/header";
+import {Footer} from "../../../widgets/footer";
 
 export interface PageLayoutProps extends HTMLProps<any> {
   pageName?: string

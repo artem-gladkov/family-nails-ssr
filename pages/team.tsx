@@ -1,6 +1,6 @@
 import type {NextPage} from 'next'
 import {PageLayout} from "@shared/ui";
-import {Team} from "@features/team";
+import {Team} from "../widgets/team";
 
 const Pedicure: NextPage = () => {
   return (
