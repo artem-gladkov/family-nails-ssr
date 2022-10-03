@@ -4,6 +4,7 @@ import styles from "./Button.module.scss";
 
 export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   skin?: 'primary' | 'ghost'
+  size?: 'big' | 'default' | 'small'
   href?: string
   target?: HTMLAttributeAnchorTarget
 }
@@ -12,6 +13,7 @@ export const Button: FC<IButtonProps> = ({
   className,
   skin = 'primary',
   onClick,
+  size,
   href,
   target = "_self",
   children,
@@ -19,6 +21,7 @@ export const Button: FC<IButtonProps> = ({
 }) => {
   const classes = classNames(
     styles.button,
+    styles[skin],
     styles[skin],
     className
   )

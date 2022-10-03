@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 @media screen and (max-width: $laptop-width) {
   .header {
     height: $header-height-t;

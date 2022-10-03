@@ -3,6 +3,7 @@ import styles from './Header.module.scss';
 import {Logo, Button, Nav, Burger, Container, MobileMenu} from "@shared/ui";
 import {useRouter} from "next/router";
 import classNames from "classnames";
+import Link from "next/link";
 
 interface IHeaderProps {
 
@@ -17,11 +18,18 @@ export const Header: FC<IHeaderProps> = ({}) => {
     body.current = document.querySelector('body')
   }, [])
 
+  useEffect(() => {
+    if(body.current) {
+      if(isOpenHeader){
+        body.current.classList.add('locked')
+      } else {
+        body.current.classList.remove('locked')
+      }
+    }
+  }, [isOpenHeader])
+
   const toggleIsOpenHeader = useCallback(() => {
     setIsOpenHeader(prevState => !prevState)
-    if (body.current) {
-      body.current.classList.toggle('locked')
-    }
   }, [])
 
   return (
@@ -29,7 +37,9 @@ export const Header: FC<IHeaderProps> = ({}) => {
       <div className={styles.innerWrapper}>
         <Container>
         <div className={styles.content}>
-          <Logo/>
+          <Link href='/'>
+            <Logo className={styles.logo}/>
+          </Link>
           <Nav className={styles.nav} currentPage={pathname}/>
           <Button
             className={styles.ctaButton}

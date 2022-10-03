@@ -5,8 +5,6 @@ import styles from './Preview.module.scss'
 import {FC, HTMLProps, ReactElement} from "react";
 import classNames from "classnames";
 
-import nailsPhoto from '/public/images/nails.png'
-
 export interface PreviewProps extends HTMLProps<HTMLDivElement>{
   pageTitle: string | ReactElement
 }
@@ -15,7 +13,7 @@ export const Preview:FC<PreviewProps> = ({className, pageTitle,  ...otherProps})
   return (
     <section className={classNames(styles.preview, className)} {...otherProps}>
       <div className={styles.photo}>
-        <img src='/images/nails.png' />
+        <img src='/images/nails.webp' />
       </div>
       <Container className={styles.container}>
         <div className={styles.offer}>
@@ -24,8 +22,8 @@ export const Preview:FC<PreviewProps> = ({className, pageTitle,  ...otherProps})
             Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 990 ₽
           </h4>
           <Button href="https://n445954.yclients.com" target="_blank">
-              Записаться онлайн
-            </Button>
+            Записаться онлайн
+          </Button>
         </div>
       </Container>
     </section>

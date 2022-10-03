@@ -4,9 +4,9 @@
   cursor: pointer;
   width: 100%;
   display: flex;
-  grid-gap: 30px;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  grid-gap: 30px;
   border-radius: 5px;
   background-color: white;
   padding: 20px 10px;
@@ -41,6 +41,8 @@
   display: flex;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 580px;
+  width: 100%;
 }
 
 .title {
