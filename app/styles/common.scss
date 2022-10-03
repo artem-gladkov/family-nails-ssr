@@ -20,6 +20,12 @@ body {
   @media screen and (max-width: $laptop-width) {
     padding: $header-height-t 0 0;
   }
+
+  &.locked {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 h1 {

@@ -1,0 +1,65 @@
+@import "app/styles/variables";
+@import "app/styles/utils";
+
+$burger-height: 24px;
+$burger-width: 36px;
+$line-height: 4px;
+
+$burger-center-y: $burger-height / 2 - $line-height / 2;
+
+.burger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @extend %resetButton;
+
+  &.active {
+    .line {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: $burger-center-y;
+      }
+
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: $burger-center-y;
+      }
+    }
+  }
+}
+
+.lines {
+  display: block;
+  position: relative;
+  width: $burger-width;
+  height: $burger-height;
+}
+
+.line {
+  width: $burger-width;
+  height: $line-height;
+  position: absolute;
+  border-radius: 5px;
+  background-color: $primary-color-5;
+  left: 0;
+  top: 0;
+  transition: transform ease .3s, top ease .3s;
+
+  &:nth-child(2) {
+    top: $burger-center-y;
+  }
+
+  &:nth-child(3) {
+    top: $burger-height - $line-height;
+  }
+}
+
+.text {
+  color: $primary-color-5;
+  text-transform: uppercase;
+  margin: 0 10px 0 0;
+}

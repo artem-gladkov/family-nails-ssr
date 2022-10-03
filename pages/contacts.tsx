@@ -1,12 +1,14 @@
 import type {NextPage} from 'next'
 import {Contacts} from "../widgets/contacts";
-import {PageLayout} from "@shared/ui";
+import {Container, PageLayout} from "@shared/ui";
 
 const ContactsPage: NextPage = () => {
   return (
     <PageLayout pageName='Контакты'>
-      <h1>Контакты</h1>
-      <Contacts />
+      <Container>
+        <h1>Контакты</h1>
+      </Container>
+      <Contacts/>
     </PageLayout>
   )
 }

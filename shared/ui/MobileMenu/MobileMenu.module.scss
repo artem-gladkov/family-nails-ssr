@@ -1,0 +1,57 @@
+@import "app/styles/variables";
+
+.mobileMenu {
+  display: flex;
+  position: fixed;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: -1;
+  transition: transform ease .4s;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &.active {
+    transition: transform ease .4s;
+    transform: translateY(0);
+  }
+
+  &InnerWrapper {
+    margin: $header-height-t 0 0;
+    padding: 0 0 $header-height-t;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  .mobileNav {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    text-align: center;
+
+    .mobileLink {
+      margin: 0;
+      padding: 25px 0;
+      font-size: 18px;
+    }
+  }
+
+  .mobileCtaButton {
+    display: block;
+    margin: 35px 0 0;
+  }
+
+  .phone {
+    text-decoration: none;
+    margin: 20px 0 0 0;
+    color: $dark-gray-color;
+  }
+}

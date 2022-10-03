@@ -5,15 +5,26 @@
   width: 100%;
   z-index: 2;
   top: 0;
-  background-color: $white;
   height: $header-height;
-  display: flex;
-  align-items: center;
   box-shadow: $primary-shadow-1;
 
-  @media screen and (max-width: $laptop-width) {
-    height: $header-height-t;
+  .burger {
+    display: none;
+
+    &.visible {
+      display: flex
+    }
   }
+}
+
+.innerWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: $white;
 }
 
 .content {
@@ -22,22 +33,30 @@
   align-items: center;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (max-width: $laptop-width) {
+  .header {
+    height: $header-height-t;
 
-  @media screen and (max-width: $laptop-width) {
-    margin: 0 0 0 35px;
+    .ctaButton {
+      display: none;
+    }
+
+    .nav {
+      margin: 0 0 0 35px;
+    }
   }
 }
 
-.phone {
-  text-decoration: none;
-  margin: 0 35px 0 0;
-  color: $dark-gray-color;
+@media screen and (max-width: $tablet-width) {
+  .header {
+    .nav {
+      display: none;
+    }
 
-  @media screen and (max-width: $laptop-width) {
-    display: none;
+    .burger {
+      display: flex;
+    }
   }
 }
+
+

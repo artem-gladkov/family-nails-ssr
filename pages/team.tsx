@@ -1,11 +1,13 @@
 import type {NextPage} from 'next'
-import {PageLayout} from "@shared/ui";
+import {Container, PageLayout} from "@shared/ui";
 import {Team} from "../widgets/team";
 
 const Pedicure: NextPage = () => {
   return (
     <PageLayout pageName='Команда' >
-      <h1>Команда</h1>
+      <Container>
+        <h1>Команда</h1>
+      </Container>
       <Team />
     </PageLayout>
   )
