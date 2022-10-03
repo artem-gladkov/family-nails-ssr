@@ -13,14 +13,14 @@ import 'swiper/css/autoplay';
 
 
 import styles from './Portfolio.module.scss'
-import {Container, Title} from '@shared/ui';
+import {Container, Section, Title} from '@shared/ui';
 import {PORTFOLIO_LIST} from "../../constants";
 
-export interface PortfolioProps extends HTMLProps<HTMLDivElement> {}
+export interface PortfolioProps extends HTMLProps<HTMLBaseElement> {}
 
 export const Portfolio: FC<PortfolioProps> = ({className, children, ...otherProps}) => {
   return (
-    <section className={classNames(styles.portfolio, className)} {...otherProps}>
+    <Section className={classNames(styles.portfolio, className)} {...otherProps}>
       <Container>
         <Title type={'green'}>Портфолио</Title>
       </Container>
@@ -40,7 +40,7 @@ export const Portfolio: FC<PortfolioProps> = ({className, children, ...otherProp
           <SwiperSlide key={photo.src}><Image src={photo} placeholder="blur"/></SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </Section>
   )
 }
 

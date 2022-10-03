@@ -4,7 +4,7 @@
   position: relative;
   width: max-content;
   padding: 19px 75px;
-  margin: 120px 0 60px -75px;
+  margin: 0 0 60px -75px;
 
   &.green {
     .text {
@@ -82,11 +82,9 @@
   }
 }
 
-
-
 @media screen and (max-width: $tablet-width-m) {
   .title {
-    margin: 60px 0 30px -30px;
+    margin: 0 0 30px -30px;
     padding: 8px 40px;
 
     .text {

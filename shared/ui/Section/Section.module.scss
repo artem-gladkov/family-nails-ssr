@@ -1,0 +1,10 @@
+@import "app/styles/variables";
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 45px 0;
+  }
+}
+

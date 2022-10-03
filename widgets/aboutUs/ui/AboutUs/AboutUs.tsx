@@ -2,7 +2,7 @@ import {FC, HTMLProps} from 'react'
 import classNames from 'classnames'
 
 import styles from './AboutUs.module.scss'
-import {Container, Logo, Title} from '@shared/ui'
+import {Container, Logo, Section, Title} from '@shared/ui'
 
 const ITEMS: ItemProps[] = [{
   key: '1',
@@ -23,7 +23,7 @@ export interface AboutUsProps extends HTMLProps<any> {
 
 export const AboutUs: FC<AboutUsProps> = ({className, children, ...otherProps}) => {
   return (
-    <section className={classNames(styles.aboutUs, className)} {...otherProps}>
+    <Section className={classNames(styles.aboutUs, className)} {...otherProps}>
       <Container>
         <Title>О нас</Title>
         <div className={styles.wrapper}>
@@ -35,7 +35,7 @@ export const AboutUs: FC<AboutUsProps> = ({className, children, ...otherProps}) 
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   )
 }
 

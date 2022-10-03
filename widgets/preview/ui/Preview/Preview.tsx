@@ -1,8 +1,11 @@
 import {Button, Container} from "@shared/ui";
+import Image from 'next/image';
 
 import styles from './Preview.module.scss'
 import {FC, HTMLProps, ReactElement} from "react";
 import classNames from "classnames";
+
+import nailsPhoto from '/public/images/nails.png'
 
 export interface PreviewProps extends HTMLProps<HTMLDivElement>{
   pageTitle: string | ReactElement
@@ -11,21 +14,18 @@ export interface PreviewProps extends HTMLProps<HTMLDivElement>{
 export const Preview:FC<PreviewProps> = ({className, pageTitle,  ...otherProps}) => {
   return (
     <section className={classNames(styles.preview, className)} {...otherProps}>
-      <div className={styles.bg}>
-        <div className={styles.bgGradient}/>
+      <div className={styles.photo}>
+        <img src='/images/nails.png' />
       </div>
       <Container className={styles.container}>
         <div className={styles.offer}>
-          <OfferBg />
-          <div className={styles.offerWrapper}>
-            <h1 className={styles.offerTitle}>{pageTitle}</h1>
-            <h4 className={styles.offerSubtitle}>
-              Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 990 ₽
-            </h4>
-            <Button href="https://n445954.yclients.com" target="_blank">
+          <h1 className={styles.offerTitle}>{pageTitle}</h1>
+          <h4 className={styles.offerSubtitle}>
+            Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 990 ₽
+          </h4>
+          <Button href="https://n445954.yclients.com" target="_blank">
               Записаться онлайн
             </Button>
-          </div>
         </div>
       </Container>
     </section>
