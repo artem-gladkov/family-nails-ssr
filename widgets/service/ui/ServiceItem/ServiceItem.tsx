@@ -22,7 +22,7 @@ export const ServiceItem: FC<ServiceItemProps> = ({href, key,  title, descriptio
           <p className={styles.description}>
             {description}
           </p>
-          <p className={styles.linkText}>Подробнее -></p>
+          <p className={styles.linkText}>Подробнее</p>
         </div>
         <div className={styles.photo}>
           <Image src={photo} alt={title} placeholder="blur"/>

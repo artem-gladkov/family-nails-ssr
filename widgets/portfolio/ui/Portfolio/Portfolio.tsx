@@ -16,7 +16,7 @@ import styles from './Portfolio.module.scss'
 import {Container, Section, Title} from '@shared/ui';
 import {PORTFOLIO_LIST} from "../../constants";
 
-export interface PortfolioProps extends HTMLProps<HTMLDivElement> {}
+export interface PortfolioProps extends HTMLProps<HTMLBaseElement> {}
 
 export const Portfolio: FC<PortfolioProps> = ({className, children, ...otherProps}) => {
   return (
