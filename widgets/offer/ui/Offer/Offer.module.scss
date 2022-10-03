@@ -1,16 +1,19 @@
 @import 'app/styles/variables';
 
 .offer {
-  padding: 120px 0;
   position: relative;
-  max-height: 50vw;
+  max-height: 600px;
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url("./thrid_offer_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 120px 0 0;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
 }
 
 .title {

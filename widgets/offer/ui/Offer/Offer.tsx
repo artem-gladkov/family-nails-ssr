@@ -1,17 +1,22 @@
 import {FC, HTMLProps} from 'react'
 import classNames from 'classnames'
+import bgPhoto from '/public/images/thrid_offer_bg.jpg'
+import {Button, Container, Section} from '@shared/ui'
+import Image from 'next/image'
 
 import styles from './Offer.module.scss'
-import {Button, Container} from '@shared/ui'
 
-export interface OfferProps extends HTMLProps<HTMLDivElement> {
+export interface OfferProps extends HTMLProps<HTMLBaseElement> {
   title: string,
   subtitle: string
 }
 
 export const Offer: FC<OfferProps> = ({className, children, title, subtitle, ...otherProps}) => {
   return (
-    <section className={classNames(styles.offer, className)} {...otherProps}>
+    <Section className={classNames(styles.offer, className)} {...otherProps}>
+      <div className={styles.bg}>
+        <Image src={bgPhoto} placeholder='blur'/>
+      </div>
       <Container>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>
@@ -23,7 +28,7 @@ export const Offer: FC<OfferProps> = ({className, children, title, subtitle, ...
           <Button target="_blank" href="https://n445954.yclients.com">Записаться онлайн</Button>
         </div>
       </Container>
-    </section>
+    </Section>
   )
 }
 
