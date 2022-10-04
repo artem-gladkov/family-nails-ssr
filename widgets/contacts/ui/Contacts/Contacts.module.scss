@@ -32,6 +32,7 @@
 
 @media screen and (max-width: $laptop-width) {
   .contacts {
+    padding-bottom: 0;
     max-height: unset;
     height: unset;
   }

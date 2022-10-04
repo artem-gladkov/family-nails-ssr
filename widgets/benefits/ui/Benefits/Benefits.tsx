@@ -12,7 +12,7 @@ export const Benefits: FC<IBenefitsProps> = ({className}) => {
   return (
     <Section className={classNames(styles.benefits, className)}>
       <Container>
-          <Title type='bisque'>С нами комфортно</Title>
+          <Title type='green'>С нами комфортно</Title>
           <div className={styles.list}>
             {BENEFITS_LIST.map(Benefit)}
           </div>

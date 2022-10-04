@@ -1,9 +1,11 @@
 import {Button, Container} from "@shared/ui";
 import Image from 'next/image';
 
-import styles from './Preview.module.scss'
 import {FC, HTMLProps, ReactElement} from "react";
 import classNames from "classnames";
+import previewPhoto from '/public/images/nails.webp'
+
+import styles from './Preview.module.scss'
 
 export interface PreviewProps extends HTMLProps<HTMLDivElement>{
   pageTitle: string | ReactElement
@@ -13,14 +15,14 @@ export const Preview:FC<PreviewProps> = ({className, pageTitle,  ...otherProps})
   return (
     <section className={classNames(styles.preview, className)} {...otherProps}>
       <div className={styles.photo}>
-        <img src='/images/nails.webp' />
+        <Image src={previewPhoto} placeholder="blur" quality={100} layout='fill' objectFit={'contain'} objectPosition={'right'}/>
       </div>
       <Container className={styles.container}>
         <div className={styles.offer}>
           <h1 className={styles.offerTitle}>{pageTitle}</h1>
-          <h4 className={styles.offerSubtitle}>
+          <p className={styles.offerSubtitle}>
             Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 990 ₽
-          </h4>
+          </p>
           <Button href="https://n445954.yclients.com" target="_blank">
             Записаться онлайн
           </Button>

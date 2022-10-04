@@ -38,7 +38,9 @@ export const Header: FC<IHeaderProps> = ({}) => {
         <Container>
         <div className={styles.content}>
           <Link href='/'>
-            <Logo className={styles.logo}/>
+            <a>
+              <Logo className={styles.logo}/>
+            </a>
           </Link>
           <Nav className={styles.nav} currentPage={pathname}/>
           <Button

@@ -25,7 +25,6 @@ export const PORTFOLIO_LIST: StaticImageData[] = [
   portfolio_4,
   portfolio_6,
   portfolio_7,
-  portfolio_10,
   portfolio_11,
   portfolio_12,
   portfolio_15,

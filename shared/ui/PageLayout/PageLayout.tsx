@@ -18,7 +18,7 @@ export const PageLayout: FC<PageLayoutProps> = ({pageName, children, ...otherPro
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-        <title>{pageName ? `Family Nails | ${pageName}` : 'Family Nails — Студия маникюра и педикюра'}</title>
+        <title>{pageName ? `Family Nails | ${pageName}` : 'Сделать осенний маникюр в студии маникюра Family Nails г Орел'}</title>
         <meta property="description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
         <meta property="og:title" content="Делаем качественный маникюр и педикюр — Студия «Family Nails»"/>
         <meta property="og:description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
@@ -27,7 +27,9 @@ export const PageLayout: FC<PageLayoutProps> = ({pageName, children, ...otherPro
       </Head>
 
       <Header/>
-      {children}
+      <div className={styles.pageWrapper}>
+        {children}
+      </div>
       <Footer/>
     </>
   )

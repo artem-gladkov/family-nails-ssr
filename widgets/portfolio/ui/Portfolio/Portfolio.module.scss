@@ -1,0 +1,14 @@
+@import "app/styles/variables";
+
+.photo {
+  max-width: 600px;
+  min-width: 200px;
+  border-radius: $default-border-radius;
+  overflow: hidden;
+  padding: 0 10px;
+
+  & img {
+    border-radius: $default-border-radius;
+    overflow: hidden;
+  }
+}

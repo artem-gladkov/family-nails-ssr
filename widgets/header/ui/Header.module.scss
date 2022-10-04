@@ -39,7 +39,6 @@
 
 @media screen and (max-width: $laptop-width) {
   .header {
-    height: $header-height-t;
 
     .ctaButton {
       display: none;
@@ -53,6 +52,8 @@
 
 @media screen and (max-width: $tablet-width) {
   .header {
+    height: $header-height-t;
+
     .nav {
       display: none;
     }

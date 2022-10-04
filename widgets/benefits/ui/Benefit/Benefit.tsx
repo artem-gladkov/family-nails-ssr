@@ -15,7 +15,7 @@ export const Benefit: FC<BenefitProps> = ({className, title, icon: {src, alt}, k
   return (
     <div key={key} className={classNames(styles.benefit, className)}>
       <div className={styles.photo}>
-        <Image src={src} alt={alt}/>
+        <Image src={src} alt={alt}  placeholder='blur'/>
       </div>
       <div className={styles.info}>
         <h3 className={styles.title}>{title}</h3>

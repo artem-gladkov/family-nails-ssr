@@ -8,11 +8,11 @@
   font-weight: normal;
   margin: 0;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $h1-font-size-t;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $h1-font-size-m;
   }
 }
@@ -25,11 +25,11 @@
   font-weight: normal;
   margin: 0;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $h2-font-size-t;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $h2-font-size-m;
   }
 }
@@ -42,12 +42,12 @@
   font-weight: normal;
   margin: 0 0 25px;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $h3-font-size-t;
     margin: 0 0 20px;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $h3-font-size-m;
   }
 }
@@ -60,11 +60,11 @@
   font-weight: normal;
   margin: 0;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $h4-font-size-t;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $h4-font-size-m;
   }
 }
@@ -75,11 +75,11 @@
   color: $dark-gray-color;
   margin: 0;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $text-font-size-t;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $text-font-size-m;
   }
 }
@@ -108,11 +108,11 @@
   opacity: 0.15;
   margin: 0;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     font-size: $number-font-size-t;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width-m) {
     font-size: $number-font-size-m;
   }
 }

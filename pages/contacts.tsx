@@ -5,9 +5,6 @@ import {Container, PageLayout} from "@shared/ui";
 const ContactsPage: NextPage = () => {
   return (
     <PageLayout pageName='Контакты'>
-      <Container>
-        <h1>Контакты</h1>
-      </Container>
       <Contacts hasMap/>
     </PageLayout>
   )

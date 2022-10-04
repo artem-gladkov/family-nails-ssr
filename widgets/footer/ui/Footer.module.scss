@@ -7,7 +7,7 @@
   background: $white;
   height: $footer-height;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     height: $footer-height-t;
   }
 }

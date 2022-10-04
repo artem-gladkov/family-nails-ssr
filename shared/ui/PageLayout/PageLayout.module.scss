@@ -1,0 +1,9 @@
+@import "app/styles/variables";
+
+.pageWrapper {
+  min-height: calc(100vh - ($header-height + $footer-height));
+
+  @media screen and (max-width: $tablet-width){
+    min-height: calc(100vh - ($header-height-t + $footer-height-t));
+  }
+}

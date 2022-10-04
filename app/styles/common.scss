@@ -17,7 +17,7 @@ body {
   padding: $header-height 0 0;
   min-height: 100vh;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: $tablet-width) {
     padding: $header-height-t 0 0;
   }
 
@@ -50,4 +50,32 @@ p {
 
 .number {
   @extend %number;
+}
+
+.swiper {
+  padding: 0 0 40px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $primary-color-2 !important;
+  top: 0 !important;
+  height: 100% !important;
+  margin-top: unset !important;
+
+  &:after {
+    font-size: 80px !important;
+  }
+}
+
+.swiper-button-prev {
+  left: 20px !important;
+}
+
+.swiper-button-next{
+  right: 20px !important;
+}
+
+.swiper-pagination {
+
 }

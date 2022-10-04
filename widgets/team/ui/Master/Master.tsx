@@ -16,7 +16,7 @@ export const Master: FC<MasterProps> = ({className, key, photo: {src, alt}, name
     <div key={key} className={classNames(styles.master, className)} {...otherProps}>
       <div className={styles.master}>
         <div className={styles.photo}>
-          <Image src={src} alt={alt}/>
+          <Image src={src} alt={alt} placeholder='blur'/>
         </div>
         <h4 className={styles.name}>{name}</h4>
         <div className={styles.description}>Маникюр, педикюр, наращивание</div>
