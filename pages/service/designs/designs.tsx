@@ -3,8 +3,8 @@ import {Button, Container, PageLayout, Section, Title} from "@shared/ui";
 import {Preview} from "@widgets/preview";
 import {Portfolio} from "@widgets/portfolio";
 import {PRICE_LIST, PriceListGroup} from "@widgets/priceList";
-import servicePhoto from "/public/images/service/designs.jpg";
-import servicePreviewPhoto from "/public/images/service/designs_preview.jpg";
+import servicePhoto from "public/images/service/designs.jpg";
+import servicePreviewPhoto from "public/images/service/designs_preview.jpg";
 import {ServiceDescription} from "@widgets/serviceDescription";
 import styles from './designs.module.scss'
 
