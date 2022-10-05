@@ -24,11 +24,10 @@
     margin: $header-height-t 0 0;
     padding: 0 0 $header-height-t;
     width: 100%;
-    height: 100%;
+    height: calc(100% - $header-height-t);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow: scroll;
   }
 

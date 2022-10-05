@@ -15,7 +15,7 @@ export const Preview:FC<PreviewProps> = ({className, pageTitle,  ...otherProps})
   return (
     <section className={classNames(styles.preview, className)} {...otherProps}>
       <div className={styles.photo}>
-        <Image src={previewPhoto} placeholder="blur" quality={100} layout='fill' objectFit={'contain'} objectPosition={'right'}/>
+        <Image src={previewPhoto} quality={100} layout='fill' objectFit={'contain'} objectPosition={'right'}/>
       </div>
       <Container className={styles.container}>
         <div className={styles.offer}>
