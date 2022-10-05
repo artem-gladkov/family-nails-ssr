@@ -4,7 +4,7 @@ import {Team} from "../widgets/team";
 
 const Pedicure: NextPage = () => {
   return (
-    <PageLayout pageName='Команда' >
+    <PageLayout pageTitle='Команда' >
       <Team />
     </PageLayout>
   )

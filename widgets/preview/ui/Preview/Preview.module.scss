@@ -35,7 +35,7 @@ $previewHeight: calc(90vh - $header-height);
   &Subtitle {
     @extend %h4;
     color: $white;
-    max-width: 630px;
+    max-width: 631px;
     margin: 0 0 40px 0;
   }
 }
@@ -63,7 +63,7 @@ $previewHeight: calc(90vh - $header-height);
 
 @media screen and (max-width: $tablet-width) {
   .offerSubtitle {
-    max-width: 470px;
+    max-width: 474px;
   }
 }
 

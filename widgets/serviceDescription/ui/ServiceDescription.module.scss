@@ -1,0 +1,34 @@
+@import "app/styles/variables";
+
+.title {
+  margin: 0 0 30px;
+}
+
+.text {
+  & p {
+    margin: 0 0 10px;
+  }
+}
+
+.body {
+  display: grid;
+  grid-template-columns: minmax(300px, 50%) 1fr;
+  grid-gap: 60px;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: $default-border-radius;
+
+  & img {
+    overflow: hidden;
+    border-radius: $default-border-radius;
+  }
+}
+
+@media screen and (max-width: $laptop-width) {
+  .body {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}

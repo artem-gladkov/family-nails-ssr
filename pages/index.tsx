@@ -15,7 +15,7 @@ import {PageLayout} from "@shared/ui";
 const Home: NextPage = () => {
   return (
     <PageLayout >
-      <Preview pageTitle={<>Ногтевая студия <br/> Family Nail&apos;s</>}/>
+      <Preview previewTitle={<>Ногтевая студия <br/> Family Nail&apos;s</>}/>
       <Service/>
       <Advantages/>
       <Benefits/>

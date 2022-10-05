@@ -4,7 +4,7 @@ import {Portfolio} from "@widgets/portfolio";
 
 const PortfolioPage: NextPage = () => {
   return (
-    <PageLayout pageName='Портфолио'>
+    <PageLayout pageTitle='Портфолио'>
       <Portfolio />
     </PageLayout>
   )

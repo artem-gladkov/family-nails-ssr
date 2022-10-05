@@ -5,32 +5,33 @@ import {Portfolio} from "@widgets/portfolio";
 import {PRICE_LIST, PriceListGroup} from "@widgets/priceList";
 
 import styles from './manicure.module.scss'
+import {ServiceDescription} from "@widgets/serviceDescription";
+import photo from '/public/images/service/manicure.jpg'
 
 const Manicure: NextPage = () => {
   const {title, items} = PRICE_LIST[1]
 
   return (
-    <PageLayout pageName='Маникюр'>
-      <Preview pageTitle='Маникюр в Орле'/>
-      <Container>
-        <h2 className={styles.title}>Маникюр</h2>
-        <p className={styles.paragraph}> Красивые и ухоженные руки- главное украшение любой женщины. В Family Nail’s вам
-          помогут сделать ваш образ
+    <PageLayout pageTitle='Сделать модный маникюр в ногтевой студии Family Nails г Орел'>
+      <Preview previewTitle='Маникюр в Орле'/>
+      <ServiceDescription title='Маникюр' photo={photo}>
+        <p>
+          Красивые и ухоженные руки- главное украшение любой женщины. В Family Nail’s вам помогут сделать ваш образ
           эффектнее и подберут цвет и дизайн, опираясь на ваши предпочтения.
         </p>
-        <p className={styles.paragraph}>
+        <p>
           Мастера студии всегда внимательны к вашей красоте и готовы сделать модный маникюр с заботой о вашем
           здоровье.
         </p>
-        <p className={styles.paragraph}>
+        <p>
           В студии работают в комбинированной технике, которая является универсальной и позволяет сделать чистую
           обработку на любой тип кожи.
         </p>
-        <p className={styles.paragraph}>
-          Покрытие только современными материалами позволяет подчеркнуть индивидуальность и достичь желаемого эффекта.
+        <p>
+          Покрытие только современными материалами позволяет подчеркнуть индивидуальность и достичь желаемого
+          эффекта.
         </p>
-
-      </Container>
+      </ServiceDescription>
       <Portfolio/>
       <Section className='ov-h'>
         <Container>

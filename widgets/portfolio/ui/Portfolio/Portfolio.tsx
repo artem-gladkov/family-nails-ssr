@@ -1,6 +1,6 @@
 import {FC, HTMLProps, useCallback, useEffect, useState} from 'react'
 import classNames from 'classnames'
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 import { Navigation, Pagination, Lazy, Zoom, Autoplay} from 'swiper';
 
@@ -12,12 +12,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styles from './Portfolio.module.scss'
 import {Container, Section, Title} from '@shared/ui';
-import {PORTFOLIO_LIST} from "../../constants";
+import { MANICURE_PORTFOLIO_LIST } from 'public/images/portfolio/manicure';
 
-export interface PortfolioProps extends HTMLProps<HTMLBaseElement> {}
+export interface PortfolioProps extends HTMLProps<HTMLBaseElement> {
+  items?: StaticImageData[]
+}
 
 
-export const Portfolio: FC<PortfolioProps> = ({className, children, ...otherProps}) => {
+export const Portfolio: FC<PortfolioProps> = ({className, items = MANICURE_PORTFOLIO_LIST, children, ...otherProps}) => {
   const [slidesToShow, setSlidesToShow] = useState(3)
 
   useEffect(() => {
@@ -51,9 +53,10 @@ export const Portfolio: FC<PortfolioProps> = ({className, children, ...otherProp
         touchMove
         pauseOnHover
         arrows={false}
-
+        autoplay
+        autoplaySpeed={1500}
       >
-        {PORTFOLIO_LIST.map(item => {
+        {items.map(item => {
           return (
             <div className={styles.photo} key={item.src}>
               <Image className={styles.img} src={item} placeholder='blur'/>

@@ -7,39 +7,41 @@ import designsPhoto from '/public/images/service/designs.jpg'
 import extensionsPhoto from '/public/images/service/extensions.jpg'
 import repairPhoto from '/public/images/service/repair.jpg'
 
-import { ServiceItem, ServiceItemProps } from '../ServiceItem';
+import {ServiceItem, ServiceItemProps} from '../ServiceItem';
 
 export const SERVICE_LIST: ServiceItemProps[] = [{
   key: '1',
   title: 'Маникюр',
-  description: 'Красивые и ухоженные руки — главное украшение любой женщины. В ' +
-    'FamilyNails вам помогут выбрать косметическую процедуру под ваши личные особенности.',
+  description: 'Красивые и ухоженные руки — главное украшение любой женщины. ' +
+    'В Family Nail’s вам помогут сделать ваш образ эффектнее и подберут цвет и дизайн, опираясь на ваши предпочтения.',
   href: '/service/manicure',
   photo: manicurePhoto
 }, {
   key: '2',
   title: 'Педикюр',
-  description: 'Красивые и ухоженные ноги — главное украшение любой женщины. ' +
-    'В FamilyNails вам помогут выбрать косметическую процедуру под ваши личные особенности.',
+  description: 'Педикюр, как и красивое нижнее белье, его не всем видно, но он позволяет чувствовать себя увереннее. ' +
+    'В нашей студии мастера позаботятся о ваших пальчиках на ногах.',
   href: '/service/pedicure',
   photo: pedicurePhoto
 }, {
   key: '3',
   title: 'Наращивание ногтей',
-  description: 'Наращивание ногтей лбюбомй сложности.' +
-    'В FamilyNails вам помогут выбрать косметическую процедуру под ваши личные особенности.',
+  description: 'Наращивание ногтей — это быстрый способ сделать желаемую форму и длину. ' +
+    'А также настоящее спасение для тех, кто обладателей тонкой и ломкой ногтевой пластиной.',
   href: '/service/extensions',
   photo: extensionsPhoto
 }, {
   key: '4',
   title: 'Дизайн ногтей',
-  description: 'У нас вы можете создать свой уникальный дизайн. Слайдеры, стемпинг или ручная роспись в акварельной технике и текстуре.',
+  description: 'Дизайн ногтей — это возможность проявить свою индивидуальность и подчеркнуть особенности образа. ' +
+    'Наклейки, стемпинг, фольга, втирки, ручная роспись, стразы — всё это поможет вам и нашим мастерам создать ваш маникюр мечты.',
   href: '/service/designs',
   photo: designsPhoto
 }, {
   key: '5',
   title: 'Ремонт ногтей',
-  description: 'Совсем недорого. В FamilyNails вам помогут выбрать косметическую процедуру под ваши личные особенности.',
+  description: 'Восстановление формы ногтя, укрепление трещин, удаление несовершенства — ' +
+    'всё это могут исправить мастера нашей студии с помощью ремонта за совсем низкую цену.',
   href: '/service/repair',
   photo: repairPhoto
 }]

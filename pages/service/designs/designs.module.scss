@@ -1,0 +1,33 @@
+@import "app/styles/variables";
+
+.preview {
+  background: $primary-color-4;
+
+  h1, p {
+    color: $dark-gray-color !important;
+  }
+
+  & > div:first-child {
+    max-width: 48%;
+  }
+}
+
+.ctaButton {
+  margin: 60px auto 0;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .preview {
+    h1, p {
+      background-color: $primary-color-3;
+
+      padding: 10px 20px;
+      border-radius: $default-border-radius;
+      backdrop-filter: blur(5);
+    }
+
+    & > div:first-child {
+      max-width: 100%;
+    }
+  }
+}

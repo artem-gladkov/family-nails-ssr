@@ -1,13 +1,13 @@
 import type {NextPage} from 'next'
 import {Service} from "@widgets/service";
-import {Container, PageLayout} from "@shared/ui";
+import {PageLayout} from "@shared/ui";
 
-const Manicure: NextPage = () => {
+const ServicePage: NextPage = () => {
   return (
-    <PageLayout pageName='Услуги'>
+    <PageLayout pageTitle='Услуги салона по маникюру и педикюру Family Nails г Орел'>
       <Service />
     </PageLayout>
   )
 }
 
-export default Manicure
+export default ServicePage
