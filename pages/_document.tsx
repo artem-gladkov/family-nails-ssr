@@ -19,7 +19,7 @@ export default function Document() {
         <meta property="og:locale" content="ru_RU"/>
         <meta property="og:type" content="website"/>
 
-        <Script id="yandex-metrika" strategy="afterInteractive" type="text/javascript" dangerouslySetInnerHTML={{
+        <Script id="yandex-metrika" strategy="lazyOnload" type="text/javascript" dangerouslySetInnerHTML={{
           __html: `
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                 m[i].l=1*new Date();
