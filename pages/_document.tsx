@@ -2,7 +2,6 @@ import {Html, Head, Main, NextScript} from 'next/document'
 import Script from 'next/script'
 
 export default function Document() {
-
   return (
     <Html lang="ru">
       <Head>
@@ -16,8 +15,17 @@ export default function Document() {
 
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
+
+        <meta property="og:title" content="Делаем качественный маникюр и педикюр — Студия «Family Nails»"/>
+        <meta property="og:description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
         <meta property="og:locale" content="ru_RU"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:image" content="/images/og-image.jpg"/>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:url" content="https://family-nails.ru/"/>
+        <meta property="og:site_name" content="Family Nails"/>
 
         <Script id="yandex-metrika" strategy="lazyOnload" type="text/javascript" dangerouslySetInnerHTML={{
           __html: `

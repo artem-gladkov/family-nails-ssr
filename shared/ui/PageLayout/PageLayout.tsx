@@ -20,10 +20,6 @@ export const PageLayout: FC<PageLayoutProps> = ({pageName, children, ...otherPro
 
         <title>{pageName ? `Family Nails | ${pageName}` : 'Сделать осенний маникюр в студии маникюра Family Nails г Орел'}</title>
         <meta property="description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
-        <meta property="og:title" content="Делаем качественный маникюр и педикюр — Студия «Family Nails»"/>
-        <meta property="og:description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
-        <meta property="og:url" content="https://family-nails.ru/"/>
-        <meta property="og:site_name" content="Family Nails"/>
       </Head>
 
       <Header/>
