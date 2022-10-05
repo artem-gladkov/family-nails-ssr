@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/strapi-backend/node_modules
 /.pnp
 .pnp.js
 
