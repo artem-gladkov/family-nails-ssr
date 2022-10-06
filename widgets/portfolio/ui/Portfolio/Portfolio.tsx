@@ -53,8 +53,6 @@ export const Portfolio: FC<PortfolioProps> = ({className, items = MANICURE_PORTF
         touchMove
         pauseOnHover
         arrows={false}
-        autoplay
-        autoplaySpeed={1500}
       >
         {items.map(item => {
           return (
