@@ -33,33 +33,22 @@
 
 @media screen and (max-width: $laptop-width) {
   .contacts {
-    padding-bottom: 0;
     max-height: unset;
     height: unset;
-  }
-
-  .info {
-    margin: 0 0 60px;
   }
 
   .map {
     position: unset;
     width: unset;
     height: 320px;
+    margin: 30px 0 0;
   }
 }
 
 @media screen and (max-width: $tablet-width-m) {
-  .contacts {
-    padding: 60px 0 0;
-  }
-
   .list {
     grid-auto-rows: max-content;
     grid-gap: 30px 0;
   }
 
-  .info {
-    margin: 0 0 30px;
-  }
 }
