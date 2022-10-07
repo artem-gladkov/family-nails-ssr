@@ -12,7 +12,11 @@ const Pedicure: NextPage = () => {
   const {title, items} = PRICE_LIST[2]
 
   return (
-    <PageLayout pageTitle='Сделать модный педикюр в ногтевой студии Family Nails г Орел'>
+    <PageLayout
+      pageTitle='Сделать модный педикюр в ногтевой студии "Family Nails" г Орел'
+      description='Педикюр в Орле, обработка пяток, покрытие гель лак от ногтевой студии "Family Nails".
+      Запись по телефону +7-(953)-476-21-21. Ежедневно с 9:00 до 21:00.'
+    >
       <Preview
         previewTitle='Педикюр в Орле'
         description={<>Скидка на первый визит! <br/> Профессиональный педикюр за 1300 ₽ вместо 1600 ₽</>}

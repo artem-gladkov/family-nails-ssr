@@ -4,6 +4,7 @@
   position: relative;
   max-height: 674px;
   height: 100%;
+  background-color: $white;
 }
 
 .title {
@@ -19,7 +20,7 @@
 .list {
   display: grid;
   grid-auto-rows: max-content;
-  grid-gap: 60px 0;
+  grid-gap: 45px 0;
 }
 
 .map {
@@ -53,7 +54,7 @@
     padding: 60px 0 0;
   }
 
-  .items {
+  .list {
     grid-auto-rows: max-content;
     grid-gap: 30px 0;
   }

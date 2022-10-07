@@ -7,19 +7,20 @@ import {Header} from "../../../widgets/header";
 import {Footer} from "../../../widgets/footer";
 
 export interface PageLayoutProps extends HTMLProps<any> {
-  pageTitle?: string
+  pageTitle: string
+  description: string
 }
 
 
-export const PageLayout: FC<PageLayoutProps> = ({pageTitle, children, ...otherProps}) => {
+export const PageLayout: FC<PageLayoutProps> = ({pageTitle,description,  children, ...otherProps}) => {
   return (
     <>
       <Head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-        <title>{pageTitle ? pageTitle : 'Салон маникюра и педикюра — Family Nails г Орел'}</title>
-        <meta property="description" content="Студия маникюра и педикюра &quot;Family Nails&quot; в Орле"/>
+        <title>{pageTitle}</title>
+        <meta property="description" content={description} />
       </Head>
 
       <Header/>

@@ -1,9 +1,9 @@
-import {FC} from "react";
-import styles from "../Contacts/Contacts.module.scss";
+import {FC, ReactElement} from "react";
+import styles from "./Contact.module.scss";
 
 export interface ContactProps {
   title: string
-  subtitle: string
+  subtitle: string | ReactElement
   key?: string
 }
 

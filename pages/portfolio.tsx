@@ -1,10 +1,13 @@
 import type {NextPage} from 'next'
-import {Container, PageLayout} from "@shared/ui";
+import { PageLayout } from "@shared/ui";
 import {Portfolio} from "@widgets/portfolio";
 
 const PortfolioPage: NextPage = () => {
   return (
-    <PageLayout pageTitle='Портфолио'>
+    <PageLayout
+      pageTitle='Фото маникюра и педикюра от мастеров студии "Family Nails" г Орел'
+      description='Примеры выполненных работ ногтевой студии "Family Nails" г Орел.
+      Фото маникюра, педикюра, наращивания и дизайнов на короткие и длинные ногти.'>
       <Portfolio />
     </PageLayout>
   )

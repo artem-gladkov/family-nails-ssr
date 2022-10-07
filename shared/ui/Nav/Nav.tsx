@@ -34,8 +34,6 @@ export const Nav: FC<NavProps> = ({
   children,
   ...otherProps
 }) => {
-
-
   return (
     <nav className={classNames(styles.nav, className)} {...otherProps}>
       {NAV_LIST.map(({href, ...otherProps}) => (

@@ -1,20 +1,24 @@
 import type {NextPage} from 'next'
-import {Preview} from "../widgets/preview";
-import {Service} from "../widgets/service";
-import {Advantages} from "../widgets/advantages";
+import {Preview} from "@widgets/preview";
+import {Service} from "@widgets/service";
+import {Advantages} from "@widgets/advantages";
 
-import {Benefits} from '../widgets/benefits';
-import {PriceList} from "../widgets/priceList";
-import {Portfolio} from "../widgets/portfolio";
-import {Offer} from '../widgets/offer';
-import {AboutUs} from "../widgets/aboutUs";
-import {Team} from "../widgets/team";
-import {Contacts} from '../widgets/contacts';
+import {Benefits} from '@widgets/benefits';
+import {PriceList} from "@widgets/priceList";
+import {Portfolio} from "@widgets/portfolio";
+import {Offer} from '@widgets/offer';
+import {AboutUs} from "@widgets/aboutUs";
+import {Team} from "@widgets/team";
+import {Contacts} from '@widgets/contacts';
 import {PageLayout} from "@shared/ui";
 
 const Home: NextPage = () => {
   return (
-    <PageLayout >
+    <PageLayout
+      pageTitle='Салон маникюра и педикюра "Family Nails" г Орел'
+      description='Наша студия расположена в самом центре Советского района.
+      Приходите к нам, и мы порадуем вас приятными ценами и уютной атмосферой. Запись по номеру +7-(953)-476-21-21'
+    >
       <Preview previewTitle={<>Ногтевая студия <br/> Family Nail&apos;s</>}/>
       <Service/>
       <Advantages/>

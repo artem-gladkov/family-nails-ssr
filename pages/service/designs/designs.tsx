@@ -12,7 +12,11 @@ const Designs: NextPage = () => {
   const {title, items} = PRICE_LIST[5]
 
   return (
-    <PageLayout pageTitle='Сделать дизайн ногтей в ногтевой студии Family Nails г Орел'>
+    <PageLayout
+      pageTitle='Сделать дизайн ногтей в салоне маникюра и педикюра "Family Nails" г Орел'
+      description='Уникальный дизайн ногтей в Орле, наклейки, стемпинг, фольга, втирки, ручная роспись, стразы.
+       Цены и фото выполненных работ на этом сайте!'
+    >
       <Preview
         className={styles.preview}
         previewTitle={<>Дизайн ногтей <br/> в Орле</>} photo={servicePreviewPhoto}

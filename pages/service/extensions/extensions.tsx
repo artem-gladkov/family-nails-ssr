@@ -12,7 +12,11 @@ const Extensions: NextPage = () => {
   const {title, items} = PRICE_LIST[4]
 
   return (
-    <PageLayout pageTitle='Сделать наращивание ногтей в студии маникюра и педикюра Family Nails г Орел'>
+    <PageLayout
+      pageTitle='Услуги по наращиванию ногтей в студии маникюра и педикюра "Family Nails" г Орел'
+      description='Наращивание ногтей гелем в Орле, цены и фото выполненных работ на этом сайте.
+      Онлайн запись 24/7 или по телефону +7-(953)-476-21-21. Ежедневно с 09:00 до 21:00'
+    >
       <Preview previewTitle='Наращивание ногтей в Орле'/>
       <ServiceDescription title='Наращивание ногтей' photo={servicePhoto}>
         <p>
