@@ -20,7 +20,7 @@ export const PageLayout: FC<PageLayoutProps> = ({pageTitle,description,  childre
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
         <title>{pageTitle}</title>
-        <meta property="description" content={description} />
+        <meta name="description" content={description} />
       </Head>
 
       <Header/>
