@@ -35,25 +35,42 @@
 .list {
   padding: 16px 0 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(182px, 1fr));
   grid-gap: 35px;
   max-width: 570px;
 }
 
 .number {
-  @extend %h2;
+  font-family: $secondary-font-stack;
+  font-size: 56px;
 }
 
 .description {
   color: $gray-color;
 }
 
-@media screen and (max-width: $tablet-width-m) {
-  .separator::before {
+@media screen and (max-width: $desktop-width) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .separator {
     display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .wrapper {
+    align-items: center;
   }
 
   .list {
     grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 }

@@ -10,12 +10,17 @@ export interface MobileMenuProps extends HTMLProps<HTMLDivElement> {
   currentPage: string
 }
 
-export const MobileMenu: FC<MobileMenuProps> = ({isOpenHeader, currentPage, className, children, ...otherProps}) => {
-
+export const MobileMenu: FC<MobileMenuProps> = ({
+  isOpenHeader,
+  currentPage,
+  className,
+  children,
+  ...otherProps
+}) => {
   return (
     <div className={classNames(styles.mobileMenu, {[styles.active]: isOpenHeader}, className)} {...otherProps}>
       <div className={styles.mobileMenuInnerWrapper}>
-        <nav className={styles.mobileNav}>
+        <nav className={styles.mobileNav} itemScope itemType="http://www.schema.org/SiteNavigationElement">
           {NAV_LIST.map(({href, ...otherProps}) => (
             <NavLink
               key={href}

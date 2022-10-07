@@ -16,8 +16,10 @@ export const ServiceItem: FC<ServiceItemProps> = ({href, key,  title, descriptio
   return (
     <Link key={key} href={href}>
       <div className={styles.item}>
-        <div className={styles.info}><span
-          className={classNames(styles.number, 'number')}>{key}</span>
+        <div className={styles.info}>
+          <span className={classNames(styles.number, 'number')}>
+            {key}
+          </span>
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>
             {description}

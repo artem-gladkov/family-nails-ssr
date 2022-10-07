@@ -35,7 +35,12 @@ export const Nav: FC<NavProps> = ({
   ...otherProps
 }) => {
   return (
-    <nav className={classNames(styles.nav, className)} {...otherProps}>
+    <nav
+      className={classNames(styles.nav, className)}
+      itemScope
+      itemType="http://www.schema.org/SiteNavigationElement"
+      {...otherProps}
+    >
       {NAV_LIST.map(({href, ...otherProps}) => (
         <NavLink
           key={href}
@@ -55,10 +60,20 @@ export interface NavLinkProps extends LinkProps {
   className?: string
 }
 
-export const NavLink: FC<NavLinkProps> = ({href, name, active, className}) => {
+export const NavLink: FC<NavLinkProps> = ({
+  href,
+  name,
+  active,
+  className
+}) => {
   return (
     <Link key={href} href={href}>
-      <a className={classNames(styles.navLink, {[styles.active]: active}, className)}>{name}</a>
+      <a
+        className={classNames(styles.navLink, {[styles.active]: active}, className)}
+        itemProp="url"
+      >
+        {name}
+      </a>
     </Link>
   )
 }

@@ -2,7 +2,7 @@ import {FC, HTMLProps} from 'react'
 import classNames from 'classnames'
 
 import styles from './AboutUs.module.scss'
-import {Container, Logo, Section, Title} from '@shared/ui'
+import {AnimatedNumber, Container, Logo, Section, Title} from '@shared/ui'
 
 const ITEMS: ItemProps[] = [{
   key: '1',
@@ -25,11 +25,12 @@ export const AboutUs: FC<AboutUsProps> = ({className, children, ...otherProps}) 
   return (
     <Section className={classNames(styles.aboutUs, className)} {...otherProps}>
       <Container>
-        <Title>О нас</Title>
+        <Title>Мы в цифрах</Title>
         <div className={styles.wrapper}>
           <div className={styles.logo}>
             <Logo width={356} height={166}/>
-            <span className={styles.separator}>это</span></div>
+            <span className={styles.separator}>это</span>
+          </div>
           <div className={styles.list}>
             {ITEMS.map(Item)}
           </div>
@@ -48,7 +49,7 @@ interface ItemProps {
 const Item: FC<ItemProps> = ({key, number, description}) => {
   return (
     <div key={key} className={styles.item}>
-      <div className={styles.number}>{`${number}+`} </div>
+      <AnimatedNumber className={styles.number} number={number} duration={1} />
       <div className={styles.description}>{description}</div>
     </div>
   )

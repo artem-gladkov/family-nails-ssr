@@ -17,7 +17,7 @@ export const Contacts: FC<ContactsProps> = ({hasMap, className, ...otherProps}) 
     <Section className={classNames(styles.contacts, className)} {...otherProps}>
       <Container>
         <Title type='green' className={styles.title}>Контакты</Title>
-        <div className={styles.info}>
+        <div className={styles.info} itemScope itemType="http://schema.org/Organization">
           <div className={styles.list}>
             {CONTACTS_LIST.map(Contact)}
           </div>
