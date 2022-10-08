@@ -6,7 +6,7 @@ import {PRICE_LIST, PriceListGroup} from "@widgets/priceList";
 import {ServiceDescription} from "@widgets/serviceDescription";
 import servicePhoto from '/public/images/service/pedicure.jpg'
 import styles from './pedicure.module.scss'
-import {PEDICURE_PORTFOLIO_LIST} from "../../../public/images/portfolio/pedicure";
+import {PEDICURE_PORTFOLIO_LIST} from "../../public/images/portfolio/pedicure";
 
 const Pedicure: NextPage = () => {
   const {title, items} = PRICE_LIST[2]
