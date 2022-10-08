@@ -11,6 +11,7 @@ export interface PreviewProps extends HTMLProps<HTMLDivElement>{
   previewTitle: string | ReactElement
   description?: string | ReactElement
   photo?: StaticImageData;
+  imageType?: 'half' | 'transparent'
 }
 
 export const Preview:FC<PreviewProps> = ({className, photo, description, previewTitle,  ...otherProps}) => {

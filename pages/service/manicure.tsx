@@ -17,7 +17,7 @@ const Manicure: NextPage = () => {
       description='Комбинированный маникюр в Орле, а также снятие, обработка и покрытие гель лак.
       Узнать цены и записаться онлайн можно тут или по телефону +7-(953)-476-21-21.'
     >
-      <Preview previewTitle='Маникюр в Орле'/>
+      <Preview previewTitle='Маникюр в Орле' className={styles.preview}/>
       <ServiceDescription title='Маникюр' photo={photo}>
         <p>
           Красивые и ухоженные руки- главное украшение любой женщины. В Family Nail’s вам помогут сделать ваш образ
