@@ -12,7 +12,7 @@ export interface PageLayoutProps extends HTMLProps<any> {
 }
 
 
-export const PageLayout: FC<PageLayoutProps> = ({pageTitle,description,  children, ...otherProps}) => {
+export const PageLayout: FC<PageLayoutProps> = ({className, pageTitle,description,  children, ...otherProps}) => {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ export const PageLayout: FC<PageLayoutProps> = ({pageTitle,description,  childre
       </Head>
 
       <Header/>
-      <div className={styles.pageWrapper}>
+      <div className={classNames(styles.pageWrapper, className)}>
         {children}
       </div>
       <Footer/>
