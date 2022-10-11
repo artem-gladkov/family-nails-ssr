@@ -13,20 +13,20 @@ const PRICE: PriceListGroupProps = {
   items: [{
     key: '1',
     name: 'Восстановление архитектуры',
-    price: '300 ₽'
+    price: '500 ₽'
   }, {
     key: '2',
     name: 'Ремонт (восстановление угла / трещина)',
-    price: '100 ₽'
+    price: '50 ₽ / 100 ₽'
   }, {
     key: '3',
     name: 'Укрепление полигелем',
-    price: '1 ноготь 25 ₽ / все ногти 250  ₽'
+    price: '200 ₽'
   }, {
     key: '4',
     name: 'Укрепление акриловой пудрой/гелем',
-    price: '1 ноготь 100-300 ₽ / все ногти 1000-2500 ₽'
-  },]
+    price: 'Бесплатно'
+  }]
 }
 
 const Pedicure: NextPage = () => {
@@ -47,13 +47,16 @@ const Pedicure: NextPage = () => {
           ногтя и увеличить срок носки покрытия
         </p>
       </ServiceDescription>
-      <Portfolio/>
       <Section className='ov-h'>
         <Container>
           <Title>Цены</Title>
           <PriceListGroup {...PRICE}/>
-          <Button className={styles.ctaButton} href="https://n445954.yclients.com" target="_blank">
-            Записаться на ремонт ногтей
+          <Button
+            className={styles.ctaButton}
+            href='https://wa.me/79534762121?text=Здравствуйте, я бы хотела записаться на ремонт ногтей :)'
+            target="_blank"
+          >
+            Записаться на ремонт в WhatsApp
           </Button>
         </Container>
       </Section>

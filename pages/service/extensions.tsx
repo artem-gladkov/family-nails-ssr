@@ -7,6 +7,7 @@ import {ServiceDescription} from "@widgets/serviceDescription";
 import servicePhoto from "/public/images/service/extensions.jpg";
 
 import styles from './extensions.module.scss'
+import {EXTENSIONS_PORTFOLIO_LIST} from "../../public/images/portfolio/extensions";
 
 const Extensions: NextPage = () => {
   const {title, items} = PRICE_LIST[4]
@@ -32,7 +33,7 @@ const Extensions: NextPage = () => {
         </p>
 
       </ServiceDescription>
-      <Portfolio/>
+      <Portfolio items={EXTENSIONS_PORTFOLIO_LIST}/>
       <Section className='ov-h'>
         <Container>
           <Title>Цены</Title>

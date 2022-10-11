@@ -21,7 +21,7 @@ export const PriceListGroup: FC<PriceListGroupProps> = ({
 }) => {
   return (
     <div className={classNames(styles.priceListGroup, className)} {...otherProps}>
-      <PriceListGroupBg/>
+      {/*<PriceListGroupBg/>*/}
       <div className={styles.header}>
         <h3 className={styles.title}>
           {title}

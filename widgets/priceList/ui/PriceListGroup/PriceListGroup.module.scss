@@ -4,8 +4,11 @@
 .priceListGroup {
   position: relative;
   display: grid;
-  padding: 35px 0;
-  grid-gap: 10px 0;
+  padding: 24px 16px;
+  grid-gap: 16px 0;
+  background-color: $white;
+  border-radius: $default-border-radius;
+  box-shadow: $primary-shadow-2;
 
   &:nth-child(5) {
     & .bg {
@@ -30,7 +33,7 @@
 
 .list {
   display: grid;
-  grid-gap: 10px 0;
+  grid-gap: 12px 0;
 }
 
 .bg {

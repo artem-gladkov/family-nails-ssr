@@ -7,6 +7,7 @@ import servicePhoto from "public/images/service/designs.jpg";
 import servicePreviewPhoto from "public/images/service/designs_preview.jpg";
 import {ServiceDescription} from "@widgets/serviceDescription";
 import styles from './designs.module.scss'
+import {DESIGNS_PORTFOLIO_LIST} from "public/images/portfolio/designs";
 
 const Designs: NextPage = () => {
   const {title, items} = PRICE_LIST[5]
@@ -35,7 +36,7 @@ const Designs: NextPage = () => {
           сделать маникюр мечты для наших клиентов.
         </p>
       </ServiceDescription>
-      <Portfolio/>
+      <Portfolio items={DESIGNS_PORTFOLIO_LIST}/>
       <Section className='ov-h'>
         <Container>
           <Title>Цены</Title>
