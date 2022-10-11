@@ -11,12 +11,7 @@
 }
 
 @media screen and (max-width: $tablet-width-m) {
-  .advantages {
-    background-color: $primary-color-2;
-  }
-
   .list {
-    padding: 0 20px;
     grid-gap: 0;
   }
 }

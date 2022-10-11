@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import styles from './Advantages.module.scss'
 import {Container, Section, Title} from '@shared/ui'
 import {Advantage} from "../Advantage";
-import {ADVANTAGES_LIST} from "../../constants";
+import {ADVANTAGES_LIST} from "../../../../public/images/advantages";
 
 export interface IAdvantagesProps extends HTMLProps<HTMLDivElement> {}
 

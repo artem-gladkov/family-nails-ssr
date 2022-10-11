@@ -1,8 +1,7 @@
-import {AdvantageProps} from "../ui/Advantage";
-import lacquersPhoto from "./lacquers.png";
-import massagePhoto from "./massage.png";
-import palettePhoto from "./palette.png";
-import designPhoto from "./nails_design.png";
+import {AdvantageProps} from "@widgets/advantages/ui/Advantage";
+import lacquersPhoto from "./lacquers.jpg";
+import massagePhoto from "./massage.jpg";
+import palettePhoto from "./palette.jpg";
 
 export const ADVANTAGES_LIST: AdvantageProps[] = [{
   key: '0',
@@ -19,9 +18,4 @@ export const ADVANTAGES_LIST: AdvantageProps[] = [{
   photo: {src: palettePhoto, alt: 'Палитра лаков для ногтей'},
   title: 'Большая палитра цветов',
   description: 'Палитра состоит более чем из 300 оттенков и постоянно пополняется'
-},/*{
-  key: '3',
-  photo: {src: designPhoto, alt: 'Уникальный дизайн ногте'},
-  title: 'Уникальные дизайны',
-  description: 'Слайдеры, стемпинг или ручная роспись в акварельной технике и текстуре'
-}*/]
+}]

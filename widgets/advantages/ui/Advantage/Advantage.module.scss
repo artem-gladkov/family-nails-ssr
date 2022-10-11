@@ -2,15 +2,12 @@
 
 .advantage {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0 60px;
-  align-items: center;
+  background-color: $white;
+  background-position: 50% 0;
+  box-shadow: $primary-shadow-2;
 
   &:nth-child(even) {
-    .bg {
-      fill: $primary-color-2;
-    }
+    background-color: $primary-color-2;
 
     .arrow {
       fill: $primary-color-2;
@@ -29,47 +26,59 @@
   }
 }
 
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-gap: 0 60px;
+}
+
 .description {
   z-index: 1;
 }
 
 .photo {
-  justify-self: end;
-  width: 100%;
-  height: 100%;
-  max-width: 900px;
-}
+  padding: 5px 5px 2px;
 
-.bg {
-  position: absolute;
-  width: 60vw;
-  height: 100%;
-  left: 40%;
-  fill: white;
-  z-index: -1;
+  & img {
+    border-radius: $default-border-radius;
+    overflow: hidden;
+  }
 }
 
 .arrow {
   position: absolute;
-  height: 71.5%;
-  right: 20%;
+  height: 60%;
+  right: 23%;
   top: 70%;
   fill: white;
-  z-index: 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: $tablet-width-m) {
   .advantage {
     grid-template-columns: 0 1fr;
+    padding: 8px 0;
     grid-gap: 0;
+    border-radius: $default-border-radius;
 
     & ~ & {
       margin: 30px 0 0;
     }
 
-    .bg,
     .arrow {
-      display: none;
+      top: 100%;
+      height: 80px;
+      width: 50px;
+      right: 50%;
+      transform: translate(50%, -40%);
     }
+  }
+
+  .container {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 30px;
   }
 }

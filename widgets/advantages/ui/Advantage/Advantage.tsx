@@ -1,6 +1,7 @@
 import {FC} from "react";
 import styles from "./Advantage.module.scss";
 import {default as Image, StaticImageData} from "next/image";
+import {Container} from "@shared/ui";
 
 export interface AdvantageProps {
   key: string
@@ -9,19 +10,21 @@ export interface AdvantageProps {
   description: string
 }
 
-export const Advantage:FC<AdvantageProps> = ({ key, photo, title, description}) => {
+export const Advantage: FC<AdvantageProps> = ({key, photo, title, description}) => {
   return (
     <div key={key} className={styles.advantage}>
-      <AdvantageArrow />
-      <AdvantageBg />
-      <div className={styles.photo}>
-        <Image src={photo.src} alt={photo.alt}/></div>
-      <div className={styles.description}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.text}>
-          {description}
-        </p>
-      </div>
+      <Container className={styles.container}>
+        <AdvantageArrow/>
+        <div className={styles.photo}>
+          <Image src={photo.src} alt={photo.alt} placeholder='blur'/>
+        </div>
+        <div className={styles.description}>
+          <h3 className={styles.title}>{title}</h3>
+          <p className={styles.text}>
+            {description}
+          </p>
+        </div>
+      </Container>
     </div>
   )
 }
