@@ -1,0 +1,16 @@
+@import "app/styles/variables";
+
+.logo {
+  max-width:  150px;
+
+  & > svg {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: $laptop-width) {
+  .logo {
+    max-width:  120px;
+  }
+}

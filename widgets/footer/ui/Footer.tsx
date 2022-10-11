@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.content}>
-          <Logo />
+          <Logo className={styles.logo}/>
           <p className={styles.year}>2022</p>
           <Social />
         </div>

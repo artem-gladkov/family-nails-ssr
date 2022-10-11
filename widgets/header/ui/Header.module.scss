@@ -35,6 +35,10 @@
 
 .logo {
   cursor: pointer;
+
+  & > svg {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: $laptop-width) {

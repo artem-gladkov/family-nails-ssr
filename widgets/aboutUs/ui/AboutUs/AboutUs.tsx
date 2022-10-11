@@ -28,7 +28,7 @@ export const AboutUs: FC<AboutUsProps> = ({className, children, ...otherProps}) 
         <Title>Мы в цифрах</Title>
         <div className={styles.wrapper}>
           <div className={styles.logo}>
-            <Logo width={356} height={166}/>
+            <Logo className={styles.logoImg}/>
             <span className={styles.separator}>это</span>
           </div>
           <div className={styles.list}>

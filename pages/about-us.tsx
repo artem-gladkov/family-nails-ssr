@@ -39,7 +39,7 @@ const AboutUsPage: NextPage = () => {
         <p>К нам хочется возвращаться, запишитесь !</p>
       </ServiceDescription>
       <AboutUs/>
-      <Team/>
+      <Team type='short'/>
       <Contacts hasMap/>
     </PageLayout>
   )

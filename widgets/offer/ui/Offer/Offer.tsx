@@ -14,9 +14,6 @@ export interface OfferProps extends HTMLProps<HTMLBaseElement> {
 export const Offer: FC<OfferProps> = ({className, children, title, subtitle, ...otherProps}) => {
   return (
     <Section className={classNames(styles.offer, className)} {...otherProps}>
-      <div className={styles.bg}>
-        <Image src={bgPhoto} placeholder='blur'/>
-      </div>
       <Container>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>

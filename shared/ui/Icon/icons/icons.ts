@@ -1,3 +1,7 @@
 export * from './IconInst'
 export * from './IconVk'
 export * from './IconWhatsapp'
+export * from './IconParking'
+export * from './IconMap'
+export * from './IconCup'
+export * from './IconService'

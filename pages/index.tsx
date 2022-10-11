@@ -20,14 +20,14 @@ const Home: NextPage = () => {
       Приходите к нам, и мы порадуем вас приятными ценами и уютной атмосферой. Запись по номеру +7-(953)-476-21-21'
     >
       <Preview previewTitle={<>Ногтевая студия <br/> Family Nail&apos;s</>}/>
-      <Service/>
+      <Service type='short'/>
       <Advantages/>
       <Benefits/>
       <PriceList/>
       <Portfolio/>
       <Offer title='Акция “Первый визит - Педикюр”' subtitle='Профессиональный педикюр за 1300 ₽ вместо 1600 ₽'/>
       <AboutUs/>
-      <Team/>
+      <Team type='short'/>
       <Offer title='В 4 руки' subtitle='Профессиональный маникюр + педикюр = 2 часа ( вместо 4 )'/>
       <Contacts/>
     </PageLayout>

@@ -42,4 +42,20 @@
       box-shadow: $primary-shadow-3;
     }
   }
+
+  &.text {
+    border: none;
+    box-shadow: none;
+    color: $primary-color-2;
+    font-size: 24px;
+    text-decoration: underline;
+    border-radius: 0;
+    height: 54px;
+
+    &:hover,
+    &.active {
+      font-size: 30px;
+      transition: font-size ease .3s;
+    }
+  }
 }

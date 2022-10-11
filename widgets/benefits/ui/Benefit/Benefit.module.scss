@@ -1,0 +1,18 @@
+@import "app/styles/variables";
+
+.benefit {
+  background-color: $white;
+  border-radius: $default-border-radius;
+  box-shadow: $primary-shadow-2;
+  padding: 16px;
+
+  & > svg {
+    width: 48px;
+    height: 48px;
+    fill: $primary-color-2;
+  }
+}
+
+.title {
+  margin: 8px 0;
+}

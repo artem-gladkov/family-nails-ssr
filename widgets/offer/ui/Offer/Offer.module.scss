@@ -9,11 +9,8 @@
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
-}
-
-.bg {
-  position: absolute;
-  z-index: -1;
+  background-color: $primary-color-4;
+  padding: 120px 0;
 }
 
 .title {
@@ -29,6 +26,7 @@
     max-height: unset;
     height: 320px;
     background-size: cover;
+    padding: 60px 0;
   }
 
   .wrapper {

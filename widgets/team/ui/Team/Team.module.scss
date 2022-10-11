@@ -6,6 +6,11 @@
   grid-gap: 35px;
 }
 
+.allButton {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
 @media screen and (max-width: $tablet-width-m) {
   .list {
     grid-template-columns: repeat(2, 1fr);
@@ -14,6 +19,6 @@
 
 @media screen and (max-width: $mobile-width) {
   .list {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 }

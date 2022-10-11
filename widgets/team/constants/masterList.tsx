@@ -42,4 +42,6 @@ export const MASTERS_LIST: MasterProps[] = [{
   name: 'Мастер Диана',
   description: 'Маникюр',
   photo: {src: master_7, alt: 'Мастер по маникюру Диана'}
-},]
+}]
+
+export const SHORT_MASTERS_LIST = MASTERS_LIST.slice(0, 3)

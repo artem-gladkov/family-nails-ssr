@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import styles from './Service.module.scss'
-import {Container, Section, Title} from "@shared/ui";
+import {Button, Container, Section, Title} from "@shared/ui";
 import manicurePhoto from '/public/images/service/manicure.jpg'
 import pedicurePhoto from '/public/images/service/pedicure.jpg'
 import designsPhoto from '/public/images/service/designs.jpg'
@@ -46,17 +46,27 @@ export const SERVICE_LIST: ServiceItemProps[] = [{
   photo: repairPhoto
 }]
 
+const SHORT_SERVICE_LIST = SERVICE_LIST.slice(0, 2)
+
 export interface ServiceProps {
+  type?: 'short' | 'full'
 }
 
-export const Service: FC<ServiceProps> = ({}) => {
+export const Service: FC<ServiceProps> = ({type = 'full'}) => {
   return (
     <Section className={styles.service}>
       <div className={styles.body}>
         <Container>
           <Title type='green' className={styles.title}>Услуги</Title>
           <div className={styles.list}>
-            {SERVICE_LIST.map(ServiceItem)}
+            {
+              type === 'short'
+                ? <>
+                  {SHORT_SERVICE_LIST.map(ServiceItem)}
+                  <Button href='/service' skin='text'>Все услуги</Button>
+                </>
+                : SERVICE_LIST.map(ServiceItem)
+            }
           </div>
         </Container>
       </div>
