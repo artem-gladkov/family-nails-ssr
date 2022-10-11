@@ -5,6 +5,7 @@ import {Portfolio} from "@widgets/portfolio";
 import {PRICE_LIST, PriceListGroup} from "@widgets/priceList";
 import {ServiceDescription} from "@widgets/serviceDescription";
 import servicePhoto from '/public/images/service/pedicure.jpg'
+import previewPhoto from '/public/images/service/pedicure_preview.png'
 import styles from './pedicure.module.scss'
 import {PEDICURE_PORTFOLIO_LIST} from "../../public/images/portfolio/pedicure";
 
@@ -18,7 +19,9 @@ const Pedicure: NextPage = () => {
       Запись по телефону +7-(953)-476-21-21. Ежедневно с 9:00 до 21:00.'
     >
       <Preview
+        className={styles.preview}
         previewTitle='Педикюр в Орле'
+        photo={previewPhoto}
         description={<>Скидка на первый визит! <br/> Профессиональный педикюр за 1300 ₽ вместо 1600 ₽</>}
       />
       <ServiceDescription title='Педикюр' photo={servicePhoto}>

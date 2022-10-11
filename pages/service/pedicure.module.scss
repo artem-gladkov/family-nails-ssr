@@ -1,3 +1,40 @@
+@import "app/styles/variables";
+
+.preview {
+  h1, p {
+    color: $white;
+  }
+
+  & > div:first-child {
+    max-width: 700px;
+
+    &:after {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(0,0,0, 0.3) 50%, transparent 100%);
+    }
+  }
+}
+
 .ctaButton {
   margin: 60px auto 0;
+}
+
+@media screen and (max-width: $laptop-width) {
+  .preview {
+    & > div:first-child {
+      max-width: 100%;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
 }
