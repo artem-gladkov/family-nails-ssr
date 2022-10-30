@@ -11,6 +11,7 @@ import {AboutUs} from "@widgets/aboutUs";
 import {Team} from "@widgets/team";
 import {Contacts} from '@widgets/contacts';
 import {PageLayout} from "@shared/ui";
+import {httpClient} from "@shared/api/http-client";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +26,12 @@ const Home: NextPage = () => {
       <Benefits/>
       <PriceList/>
       <Portfolio/>
-      <Offer title='Акция “Первый визит - Педикюр”' subtitle='Профессиональный педикюр за 1300 ₽ вместо 1600 ₽'/>
+      <Offer
+        title='Подарок по промокоду "ФН11"'
+        subtitle='Сообщи о промокоде во время первой записи и получи набор натуральной уходовой косметики в подарок.'
+        text='Все подробности уточнайте у администратора'
+        isWhatsapp
+      />
       <AboutUs/>
       <Team type='short'/>
       <Offer title='В 4 руки' subtitle='Профессиональный маникюр + педикюр = 2 часа ( вместо 4 )'/>

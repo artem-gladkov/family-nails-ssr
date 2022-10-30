@@ -10,7 +10,7 @@ import styles from './extensions.module.scss'
 import {EXTENSIONS_PORTFOLIO_LIST} from "../../public/images/portfolio/extensions";
 
 const Extensions: NextPage = () => {
-  const {title, items} = PRICE_LIST[4]
+  const {title, items} = PRICE_LIST[3]
 
   return (
     <PageLayout

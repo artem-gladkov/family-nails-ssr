@@ -9,7 +9,7 @@ import {ServiceDescription} from "@widgets/serviceDescription";
 import photo from '/public/images/service/manicure.jpg'
 
 const Manicure: NextPage = () => {
-  const {title, items} = PRICE_LIST[1]
+  const {title, items} = PRICE_LIST[0]
 
   return (
     <PageLayout

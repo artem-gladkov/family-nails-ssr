@@ -19,6 +19,17 @@
 
 .subtitle {
   margin: 0 0 40px;
+  max-width: 800px;
+
+  &.withText {
+    margin: 0 0 15px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  opacity: 0.5;
+  margin: 0 0 40px;
 }
 
 @media screen and (max-width: $tablet-width-m) {
@@ -27,6 +38,10 @@
     height: 320px;
     background-size: cover;
     padding: 60px 0;
+  }
+
+  .text {
+    font-size: 14px;
   }
 
   .wrapper {

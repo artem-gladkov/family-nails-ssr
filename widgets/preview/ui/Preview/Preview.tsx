@@ -32,7 +32,7 @@ export const Preview:FC<PreviewProps> = ({className, photo, description, preview
         <div className={styles.offer}>
           <h1 className={styles.offerTitle}>{previewTitle}</h1>
           <p className={styles.offerSubtitle}>
-            {description || 'Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 990 ₽'}
+            {description || 'Снятие + Комбинированный маникюр + Укрепление + Выравнивание + Цвет в один тон = 1300 ₽'}
           </p>
           <Button href="https://n445954.yclients.com" target="_blank">
             Записаться онлайн

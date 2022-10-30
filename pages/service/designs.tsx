@@ -10,7 +10,7 @@ import styles from './designs.module.scss'
 import {DESIGNS_PORTFOLIO_LIST} from "public/images/portfolio/designs";
 
 const Designs: NextPage = () => {
-  const {title, items} = PRICE_LIST[5]
+  const {title, items} = PRICE_LIST[4]
 
   return (
     <PageLayout

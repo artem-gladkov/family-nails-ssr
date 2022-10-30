@@ -10,7 +10,7 @@ import styles from './pedicure.module.scss'
 import {PEDICURE_PORTFOLIO_LIST} from "../../public/images/portfolio/pedicure";
 
 const Pedicure: NextPage = () => {
-  const {title, items} = PRICE_LIST[2]
+  const {title, items} = PRICE_LIST[1]
 
   return (
     <PageLayout
@@ -22,7 +22,9 @@ const Pedicure: NextPage = () => {
         className={styles.preview}
         previewTitle='Педикюр в Орле'
         photo={previewPhoto}
-        description={<>Скидка на первый визит! <br/> Профессиональный педикюр за 1300 ₽ вместо 1600 ₽</>}
+        description={<>Педикюр за 1600 ₽. Набор натуральной уходовой косметики <strong className={styles.accent}>В
+          ПОДАРОК</strong> по промокоду
+          <strong className={styles.accent}>"ФН11"</strong></>}
       />
       <ServiceDescription title='Педикюр' photo={servicePhoto}>
         <p>

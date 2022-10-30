@@ -1,22 +1,6 @@
-import {PriceListGroupProps} from "../ui/PriceListGroup";
+import {PriceListGroupProps} from "@widgets/priceList";
 
 export const PRICE_LIST: PriceListGroupProps[] = [{
-  key: '1',
-  title: 'Акция “Первый визит”',
-  items: [{
-    key: '1',
-    name: 'Маникюр: cнятие + обработка + покрытие гель-лак в один тон',
-    price: '990 ₽'
-  }, {
-    key: '2',
-    name: 'Педикюр: снятие + обработка + покрытием гель-лак + обработка стоп',
-    price: '1300 ₽'
-  }, {
-    key: '3',
-    name: 'Комплекс в 4 руки: маникюр + педикюр',
-    price: '2290 ₽'
-  },]
-}, {
   key: '2',
   title: 'Маникюр',
   items: [{

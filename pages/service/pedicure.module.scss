@@ -27,6 +27,10 @@
   margin: 60px auto 0;
 }
 
+.accent {
+  color: $primary-color-5;
+}
+
 @media screen and (max-width: $laptop-width) {
   .preview {
     & > div:first-child {
