@@ -24,7 +24,7 @@ const Pedicure: NextPage = () => {
         photo={previewPhoto}
         description={<>Педикюр за 1600 ₽. Набор натуральной уходовой косметики <strong className={styles.accent}>В
           ПОДАРОК</strong> по промокоду
-          <strong className={styles.accent}>"ФН11"</strong></>}
+          <strong className={styles.accent}>&quot;ФН11&quot;</strong></>}
       />
       <ServiceDescription title='Педикюр' photo={servicePhoto}>
         <p>

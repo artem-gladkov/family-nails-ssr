@@ -11,7 +11,6 @@ import {AboutUs} from "@widgets/aboutUs";
 import {Team} from "@widgets/team";
 import {Contacts} from '@widgets/contacts';
 import {PageLayout} from "@shared/ui";
-import {httpClient} from "@shared/api/http-client";
 
 const Home: NextPage = () => {
   return (
