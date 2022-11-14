@@ -20,10 +20,6 @@ export const PRICE_LIST: PriceListGroupProps[] = [{
     name: 'Укрепление полигелем',
     price: '200 ₽'
   }, {
-    key: '5',
-    name: 'Снятие (без последующего покрытия)',
-    price: '300 ₽'
-  }, {
     key: '6',
     name: 'Восстановление архитектуры',
     price: '500 ₽'
