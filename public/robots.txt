@@ -7,3 +7,6 @@ Host: https://family-nails.ru
 
 # Sitemaps
 Sitemap: https://family-nails.ru/sitemap.xml
+
+#Clean-param
+Clean-param: utm_ya_campaign&yabizcmpgn&utm_candidate&etext
