@@ -14,16 +14,16 @@ import ped_12 from './ped_12.jpg'
 import {StaticImageData} from "next/image";
 
 export const PEDICURE_PORTFOLIO_LIST: StaticImageData[] = [
-  ped_1,
-  ped_2,
-  ped_3,
-  ped_4,
-  ped_5,
-  ped_6,
-  ped_7,
-  ped_8,
-  ped_9,
-  ped_10,
-  ped_11,
-  ped_12,
+    ped_1,
+    ped_2,
+    ped_3,
+    ped_4,
+    ped_8,
+    ped_9,
+    ped_12,
+    ped_5,
+    ped_6,
+    ped_7,
+    ped_10,
+    ped_11,
 ]

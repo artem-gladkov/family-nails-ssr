@@ -1,14 +1,48 @@
 @import "app/styles/variables";
 
+.body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(25% - 16px));
+  gap: 14px 16px;
+  width: 100%;
+}
+
 .photo {
-  max-width: 600px;
-  min-width: 200px;
+  width: 100%;
   border-radius: $default-border-radius;
   overflow: hidden;
-  padding: 0 10px;
+  cursor: zoom-in;
 
   & img {
     border-radius: $default-border-radius;
     overflow: hidden;
   }
 }
+
+
+@media screen and (max-width: $laptop-width) {
+  .portfolio {
+    & .body {
+
+      grid-template-columns: repeat(auto-fit, calc(33% - 16px));
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-width-m) {
+  .portfolio {
+    & .body {
+      grid-template-columns: repeat(auto-fit, calc(50% - 16px));
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile-width-m) {
+  .portfolio {
+    & .body {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+

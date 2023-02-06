@@ -20,7 +20,8 @@
     "react-slick": "^0.29.0",
     "sass": "^1.55.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^8.4.2"
+    "swiper": "^8.4.2",
+    "viewerjs": "^1.11.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.1",
