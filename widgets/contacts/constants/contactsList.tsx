@@ -4,7 +4,7 @@ import {Social} from "@shared/ui";
 export const CONTACTS_LIST: ContactProps[] = [{
   key: '1',
   title: 'Адрес',
-  subtitle: '302028, г. Орёл, ул. Гуртьева, д. 14'
+  subtitle: '302028, г. Орёл, ул. Максима Горького, д. 44'
 },{
   key: '2',
   title: 'Номер телефона',

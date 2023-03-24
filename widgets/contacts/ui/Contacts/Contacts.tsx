@@ -26,11 +26,11 @@ export const Contacts: FC<ContactsProps> = ({hasMap, className, ...otherProps}) 
       {hasMap &&  <YMaps query={{lang: 'ru_RU'}}>
           <Map
               className={styles.map}
-              defaultState={{center: [52.9766543035093, 36.06316926024887], zoom: 17}}
+              defaultState={{center: [52.97859138504996,36.07530606812266], zoom: 17}}
               width={49}
               height={50}
           >
-              <Placemark geometry={[52.9766543035093, 36.06316926024887]} properties={{
+              <Placemark geometry={[52.97859138504996,36.07530606812266]} properties={{
                 iconCaption: 'Family Nails',
                 hintContent: 'Студия маникюра и педикюра',
                 ballContentHeader: 'Family Nails',
