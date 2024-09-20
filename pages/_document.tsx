@@ -46,14 +46,9 @@ export default function Document() {
 
                 </Script>
 
-                <noscript>
-                    <div>
-                        <img src="https://mc.yandex.ru/watch/90639526" style={{position: 'absolute', left: '-9999px'}}
-                             alt=""/>
-                    </div>
-                </noscript>
 
-                <Script dangerouslySetInnerHTML={{
+
+                <Script id="recorder" dangerouslySetInnerHTML={{
                     __html: `'use strict';(function(){var t=function(){var r,e=document.createElement('script'),o=document.getElementsByTagName('script')[0];e.src='https://dev.fixspotter.com/files/scripts/recorder.js?uid=14',e.id='fixspotter-recorder',e.crossOrigin='anonymous',e.type='module',(r=o.parentNode)===null||r===void 0||r.insertBefore(e,o);};document.readyState==='complete'?t():window.addEventListener('load',t,!1);})();
       `
                 }}>
